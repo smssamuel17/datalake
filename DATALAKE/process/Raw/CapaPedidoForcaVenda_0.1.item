@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:w1vkOIKEXT8zRsIDNkJm7VSu0wxnbmzfoz9rfc66"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:59mx3NrevIgyUHE+NAX2SPLgJpS3dSzyzp+orYCe"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -58,7 +58,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/Workspace Producao/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9mTXEVhV74IvmhMACvNJnFKoqvZGpLvfjQj2mIvr"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:oIq/54XD8xI5s3QmmtzAnOAa0m6oAMDkJY9CcOQH"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -100,16 +100,6 @@
   </parameters>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
-    <elementParameter field="CHECK" name="START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -136,6 +126,9 @@
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" show="false" value=""/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" show="false" value=""/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="NumeroPedido"/>
@@ -404,126 +397,135 @@
       <column comment="" key="false" length="23" name="DbPedDtRegraCorte" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/joao.santos/OneDrive - hydronorth.com.br/Área de Trabalho/QVD/CapaPedidoForcaVenda.qvd&quot;"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
-    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Ia61gEp9Ee-8of4o_LEFPw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileOutputDelimited_1">
-      <column comment="" defaultValue="" key="true" length="10" name="NumeroPedido" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="CodigoCliente" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DataEmissao" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="PrevisaoEntrega" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="ListaPreco" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="CondicaoPagamento" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Operacao" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedPortador" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedCodMoeda" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="DbPedTabFino" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="DbPedTabFindo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="DbPedTabFini" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="DbPedTabFindi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="Representante" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedComiso" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedComisi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedPercFrete" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedCodTransp" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedCodRedesp" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="DbPedTipoFrete" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="DbPedOrdCompra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDescto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDescto2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDescto3" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDescto4" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDescto5" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDescto6" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDescto7" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedAcrescimo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="DbPedMotivoBloq" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="DbPedSituacao" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DbPedLibUsus" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DbPedLibMots" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DbPedLibDatas" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DbPedDataAlter" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DbPedDataEnvio" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DbPedObserv" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DbPedTexto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DbPedNroOrig" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="DbPedTipoPreco" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="DbPedFatur" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DbPedDataReceb" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="DbPedNroRe" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedEndPgto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="DbPedMeioTransp" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="DbPedLclEmbarq" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="DbPedLclDesemb" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedVlrFrete" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedVlrSeguro" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="DbPedEntEnder" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="DbPedEntBairro" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="DbPedEntCidade" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="DbPedEntCep" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="DbPedEntUf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="DbPedEntCgcmf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="DbPedEntCgcte" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="DbPedEmpresa" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedCdv" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="DbPedTipo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DbPedPeriodo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedPreposto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedNrpevda" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedSeqEntrega" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="DbPedRedespacho" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DbPedDtProduc" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="SituacaoCorporativa" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DbPedPrzpgto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="3" name="DbPedForaregra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDesctoVlr" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="80" name="DbPedEntRazao" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedCotacao" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedCliFinal" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="DbPedNUtiPBoni" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="DbPedEstrutura" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="DbPedEntCompl" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="DbPedEntPontoRefer" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DbPedEntCxPostal" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="DbPedEntPais" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="DbPedEntTelefone" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="DbPedEntRamal" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="15" name="DbPedDesctoCampanha" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedCancelando" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DbPedDataHora" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedMotDesc" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="DbPedNumeroOC" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="DbPedDtRegraCorte" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-    </metadata>
+    <metadata name="Ajuste_data"/>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="Ajuste_data" sizeState="INTERMEDIATE"/>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="NumeroPedido" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CodigoCliente" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DataEmissao" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="PrevisaoEntrega" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ListaPreco" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CondicaoPagamento" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Operacao" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedPortador" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedCodMoeda" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedTabFino" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedTabFindo" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedTabFini" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedTabFindi" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="Representante" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedComiso" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedComisi" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedPercFrete" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedCodTransp" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedCodRedesp" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedTipoFrete" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedOrdCompra" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedDescto" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedDescto2" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedDescto3" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedDescto4" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedDescto5" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedDescto6" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedDescto7" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedAcrescimo" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedMotivoBloq" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedSituacao" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedLibUsus" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedLibMots" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedLibDatas" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedDataAlter" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DbPedDataEnvio" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DbPedObserv" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedTexto" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedNroOrig" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedTipoPreco" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedFatur" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedDataReceb" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DbPedNroRe" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEndPgto" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedMeioTransp" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedLclEmbarq" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedLclDesemb" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedVlrFrete" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedVlrSeguro" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedEntEnder" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntBairro" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntCidade" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntCep" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntUf" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntCgcmf" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntCgcte" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEmpresa" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedCdv" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedTipo" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedPeriodo" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedPreposto" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedNrpevda" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedSeqEntrega" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedRedespacho" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedDtProduc" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SituacaoCorporativa" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedPrzpgto" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedForaregra" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedDesctoVlr" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedEntRazao" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedCotacao" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedCliFinal" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedNUtiPBoni" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="DbPedEstrutura" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntCompl" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntPontoRefer" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntCxPostal" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntPais" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntTelefone" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedEntRamal" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DbPedDesctoCampanha" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="DbPedCancelando" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedDataHora" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DbPedMotDesc" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedNumeroOC" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DbPedDtRegraCorte" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tFileOutputDelimited_1">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
@@ -532,13 +534,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a9ffa9f8-fd98-420f-98b5-5d16779f1f8c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LGbKkeEL08hJtp/PPSwei8RjaR9vRgQjhBfNT5Urolq5N97TSh9IFIXV4WeZl3SXYVmiGTGwt9R3&#13;
-F94v/uucew==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7c6fea5c-3bec-42bd-b3ac-7c213e80edb0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8Ahc+bKcaTScagIlFdPhrycvVkntGfqc/0fbX/2etXF2JGk+Hn/jAmsFlMsPnQSkUkvkJ5lQjVUM&#13;
-FVPTNP9NrA==</DigestValue></Reference></SignedInfo><SignatureValue>CSIkDAj26R9AdFuDFAyH/sCCqnuZbV6SI/UNmsx+fRf/+d+nqiCOLMO3uAaLYhWMr+hpnXNJ6pWh&#13;
-qHfmk84eRS53RLQg+4T26Oi3Ug2aoPV7Uqkdzp0KtQRgxFm/7hzvX/blj02VmD4cAqeT+bWX07Zf&#13;
-3EgX3OXCilQuQBdyUfZbzVxNDgshHrdE3hQbDlTYavx/C7pv4ZeYVFCM1TwnLR+xqyw/y1noxZGC&#13;
-qJ7bMP+gEX8evTUJ3Ax+46UdJ0iKDaiMyNaDW6kq6mwycd4IWkmxZRWMq30KQCElOj3VznEAdT1w&#13;
-Eczrmh3y7TeXWpIrwpo+6TWGYyxbECuFiT19TQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_83102b0b-d4c7-4ac1-b2bf-733dd06ab796"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bMJ/2ciYa1h7ZvD1jJSmwNv+UZG2mjNoHbXIHA5cYdDPFypiDJNDnXqqI/0923h+DbquaJ7rc9h3&#13;
+FUqa9Hwz/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_514bae85-987d-4130-a6ca-a35ca865c138"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NteS2D/HhydO458vgYb1ThDaTTOYHaq80swkG4HrqsvxJ5H2/Rvoxhhm8alT/qV+cWpgbsp+Qjr0&#13;
+UBAIFHxoGA==</DigestValue></Reference></SignedInfo><SignatureValue>Hmnp3E3bNpF1J3Ib6f9o8Pr+0Pv1UgDZTGB/mQkv3Ro2wCKcuMzGCkW8FGMpJil78FdyjiVzo/bN&#13;
+nsVwtg6b8liM4r4dOqEmpd3eVmAckfCDlMhCObtoMwQ/pBysEbtTUSf+EvvHOqjMi+WLz9L2Gpyz&#13;
+F9B+08fyJKxJpMySTKpduVmLM3OsPULInpWdqPuPYRSE6gU3088ohkBeNxgcaeqa4vqqlDlQfiba&#13;
+9vrXnqwCR3iFH1sV7cc6wYYE02+VIlKBZBy7Wd0hoi9UckJzQI92D5n3nEcZbz22s9QArVBpMnsn&#13;
+BPlYPg6qLLOBG+ryX3oXMkdsTY1VnRNEFaYWfA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -560,4 +567,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7c6fea5c-3bec-42bd-b3ac-7c213e80edb0" Target="#_a9ffa9f8-fd98-420f-98b5-5d16779f1f8c"><Timestamp>2024-08-21 13:00:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_514bae85-987d-4130-a6ca-a35ca865c138" Target="#_83102b0b-d4c7-4ac1-b2bf-733dd06ab796"><Timestamp>2024-09-12 19:22:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
