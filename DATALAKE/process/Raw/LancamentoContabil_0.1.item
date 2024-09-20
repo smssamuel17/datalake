@@ -100,16 +100,6 @@
   </parameters>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlInput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
-    <elementParameter field="CHECK" name="START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="true"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlInput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -127,7 +117,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CT2_FILIAL&#9;AS CodigoFilial,&#13;&#10;&#9;   CT2_DATA&#9;&#9;AS DataLancamentoContabil,&#13;&#10;&#9;   CT2_LOTE&#9;&#9;AS LoteContabil,&#13;&#10;&#9;   CT2_SBLOTE&#9;AS SubloteContabil,&#13;&#10;&#9;   CT2_DOC&#9;&#9;AS DocumentoContabil,&#13;&#10;&#9;   CT2_LINHA&#9;AS LinhaLancamentoContabil,&#13;&#10;&#9;   CT2_DC&#9;&#9;AS TipoLancamentoContabil,&#13;&#10;&#9;   CT2_DEBITO&#9;AS ContaDebitoContabil,&#13;&#10;&#9;   CT2_CREDIT&#9;AS ContaCreditoContabil,&#13;&#10;&#9;   CT2_VALOR&#9;AS ValorContabil,&#13;&#10;&#9;   CT2_HIST&#9;&#9;AS HistoricoContabil,&#13;&#10;&#9;   CT2_CCD&#9;&#9;AS ContaCustoDebitoContabil,&#13;&#10;&#9;   CT2_CCC&#9;&#9;AS ContaCustoCreditoContabil,&#13;&#10;&#9;   CT2_ITEMD&#9;AS ItemDebitoContabil,&#13;&#10;&#9;   CT2_ITEMC&#9;AS ItemCreditoContabil,&#13;&#10;&#9;   CT2_CLVLDB&#9;AS CLVLDBContabil,&#13;&#10;&#9;   CT2_CLVLCR&#9;AS CLVLCRContabil,&#13;&#10;&#9;   CT2_ATIVDE&#9;AS AtividadeDebitoContabil,&#13;&#10;&#9;   CT2_ATIVCR&#9;AS AtividadeCreditoContabil,&#13;&#10;&#9;   CT2_EMPORI&#9;AS EmpresaOrigemContabil,&#13;&#10;&#9;   CT2_FILORI&#9;AS FilialOrigemContabil,&#13;&#10;&#9;   CT2_TPSALD&#9;AS TipoSaldoContabil,&#13;&#10;&#9;   CT2_SEQUEN&#9;AS SequenciaContabil,&#13;&#10;&#9;   CT2_MANUAL&#9;AS LancamentoManualContabil,&#13;&#10;&#9;   CT2_ORIGEM&#9;AS OrigemLancamentoContabil,&#13;&#10;&#9;   CT2_ROTINA&#9;AS RotinaOrigemContabil,&#13;&#10;&#9;   CT2_AGLUT&#9;AS AglutinadoContabil,&#13;&#10;&#9;   CT2_LP&#9;&#9;AS LancamentoPadraoContabil,&#13;&#10;&#9;   CT2_SEQHIS&#9;AS SequenciaHistoricoContabil,&#9;&#13;&#10;&#9;   CT2_SEQLAN&#9;AS SequenciaAuxiliarContabil,&#13;&#10;&#9;   CT2_VLR01&#9;AS ValorMoedaRealContabil,&#13;&#10;&#9;   CT2_CRCONV&#9;AS CriterioConvercaoContabil,&#13;&#10;&#9;   CT2_KEY&#9;&#9;AS ChaveContabil,&#13;&#10;&#9;   CT2_DTCV3&#9;AS DataRastreioContabil,&#13;&#10;&#9;   CT2_CTLSLD&#9;AS StatusCopiaContabil,&#13;&#10;&#9;   CT2_USERGI&#9;AS UsuarioInclusaoContabil,&#13;&#10;&#9;   CT2_AT01CR&#9;AS At01CRContabil,&#13;&#10;&#9;   CT2_AT02DB&#9;AS At02DBContabil,&#13;&#10;&#9;   CT2_AT02CR&#9;AS At02CRContabil,&#13;&#10;&#9;   CT2_AT03DB&#9;AS At03DBContabil,&#13;&#10;&#9;   CT2_AT03CR&#9;AS At03CRContabil,&#13;&#10;&#9;   CT2_AT04DB&#9;AS At04DBContabil,&#13;&#10;&#9;   CT2_AT04CR&#9;AS At04CRContabil,&#13;&#10;&#9;   D_E_L_E_T_&#9;AS DeletadoContabil,&#13;&#10;&#9;   R_E_C_N_O_&#9;AS UkeyContabil,&#13;&#10;&#9;   R_E_C_D_E_L_&#9;AS RegistroDeletadoContabil,&#13;&#10;&#9;   CT2_VLR06&#9;AS Vlr06Contabil,&#13;&#10;&#9;   CT2_VLR07&#9;AS Vlr07Contabil,&#13;&#10;&#9;   S_T_A_M_P_&#9;AS DataAlteracaoContabil,&#13;&#10;&#9;   I_N_S_D_T_&#9;AS DataInsercaoContabil&#13;&#10;  FROM CT2010&#13;&#10;WHERE S_T_A_M_P_&#9;&gt;= GETDATE() - 90 &quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT CT2_FILIAL&#9;AS CodigoFilial,&#13;&#10;&#9;   CT2_DATA&#9;&#9;AS DataLancamentoContabil,&#13;&#10;&#9;   CT2_LOTE&#9;&#9;AS LoteContabil,&#13;&#10;&#9;   CT2_SBLOTE&#9;AS SubloteContabil,&#13;&#10;&#9;   CT2_DOC&#9;&#9;AS DocumentoContabil,&#13;&#10;&#9;   CT2_LINHA&#9;AS LinhaLancamentoContabil,&#13;&#10;&#9;   CT2_DC&#9;&#9;AS TipoLancamentoContabil,&#13;&#10;&#9;   CT2_DEBITO&#9;AS ContaDebitoContabil,&#13;&#10;&#9;   CT2_CREDIT&#9;AS ContaCreditoContabil,&#13;&#10;&#9;   CT2_VALOR&#9;AS ValorContabil,&#13;&#10;&#9;   CT2_HIST&#9;&#9;AS HistoricoContabil,&#13;&#10;&#9;   CT2_CCD&#9;&#9;AS ContaCustoDebitoContabil,&#13;&#10;&#9;   CT2_CCC&#9;&#9;AS ContaCustoCreditoContabil,&#13;&#10;&#9;   CT2_ITEMD&#9;AS ItemDebitoContabil,&#13;&#10;&#9;   CT2_ITEMC&#9;AS ItemCreditoContabil,&#13;&#10;&#9;   CT2_CLVLDB&#9;AS CLVLDBContabil,&#13;&#10;&#9;   CT2_CLVLCR&#9;AS CLVLCRContabil,&#13;&#10;&#9;   CT2_ATIVDE&#9;AS AtividadeDebitoContabil,&#13;&#10;&#9;   CT2_ATIVCR&#9;AS AtividadeCreditoContabil,&#13;&#10;&#9;   CT2_EMPORI&#9;AS EmpresaOrigemContabil,&#13;&#10;&#9;   CT2_FILORI&#9;AS FilialOrigemContabil,&#13;&#10;&#9;   CT2_TPSALD&#9;AS TipoSaldoContabil,&#13;&#10;&#9;   CT2_SEQUEN&#9;AS SequenciaContabil,&#13;&#10;&#9;   CT2_MANUAL&#9;AS LancamentoManualContabil,&#13;&#10;&#9;   CT2_ORIGEM&#9;AS OrigemLancamentoContabil,&#13;&#10;&#9;   CT2_ROTINA&#9;AS RotinaOrigemContabil,&#13;&#10;&#9;   CT2_AGLUT&#9;AS AglutinadoContabil,&#13;&#10;&#9;   CT2_LP&#9;&#9;AS LancamentoPadraoContabil,&#13;&#10;&#9;   CT2_SEQHIS&#9;AS SequenciaHistoricoContabil,&#9;&#13;&#10;&#9;   CT2_SEQLAN&#9;AS SequenciaAuxiliarContabil,&#13;&#10;&#9;   CT2_VLR01&#9;AS ValorMoedaRealContabil,&#13;&#10;&#9;   CT2_CRCONV&#9;AS CriterioConvercaoContabil,&#13;&#10;&#9;   CT2_KEY&#9;&#9;AS ChaveContabil,&#13;&#10;&#9;   CT2_DTCV3&#9;AS DataRastreioContabil,&#13;&#10;&#9;   CT2_CTLSLD&#9;AS StatusCopiaContabil,&#13;&#10;&#9;   CT2_USERGI&#9;AS UsuarioInclusaoContabil,&#13;&#10;&#9;   CT2_AT01CR&#9;AS At01CRContabil,&#13;&#10;&#9;   CT2_AT02DB&#9;AS At02DBContabil,&#13;&#10;&#9;   CT2_AT02CR&#9;AS At02CRContabil,&#13;&#10;&#9;   CT2_AT03DB&#9;AS At03DBContabil,&#13;&#10;&#9;   CT2_AT03CR&#9;AS At03CRContabil,&#13;&#10;&#9;   CT2_AT04DB&#9;AS At04DBContabil,&#13;&#10;&#9;   CT2_AT04CR&#9;AS At04CRContabil,&#13;&#10;&#9;   D_E_L_E_T_&#9;AS DeletadoContabil,&#13;&#10;&#9;   R_E_C_N_O_&#9;AS UkeyContabil,&#13;&#10;&#9;   R_E_C_D_E_L_&#9;AS RegistroDeletadoContabil,&#13;&#10;&#9;   CT2_VLR06&#9;AS Vlr06Contabil,&#13;&#10;&#9;   CT2_VLR07&#9;AS Vlr07Contabil,&#13;&#10;&#9;   S_T_A_M_P_&#9;AS DataAlteracaoContabil,&#13;&#10;&#9;   I_N_S_D_T_&#9;AS DataInsercaoContabil,&#13;&#10;&#9;   CT2_INCONS  AS InconsistenciaDeContinuidadeContabil&#13;&#10;  FROM CT2010&#13;&#10;WHERE S_T_A_M_P_&#9;&gt;= GETDATE() - 90&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -241,6 +231,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DataInsercaoContabil"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InconsistenciaDeContinuidadeContabil"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
@@ -297,6 +289,7 @@
       <column comment="" defaultValue="" key="false" length="15" name="Vlr07Contabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataAlteracaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataInsercaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="InconsistenciaDeContinuidadeContabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="200">
@@ -364,6 +357,7 @@
       <column comment="" defaultValue="" key="false" length="15" name="Vlr07Contabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataAlteracaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataInsercaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="InconsistenciaDeContinuidadeContabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -419,6 +413,7 @@
         <mapperTableEntries expression="row1.Vlr07Contabil " name="Vlr07Contabil" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row1.DataAlteracaoContabil " name="DataAlteracaoContabil" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.DataInsercaoContabil " name="DataInsercaoContabil" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.InconsistenciaDeContinuidadeContabil " name="InconsistenciaDeContinuidadeContabil" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="CodigoFilial" nullable="true" type="id_String"/>
@@ -471,20 +466,12 @@
         <mapperTableEntries name="Vlr07Contabil" nullable="true" type="id_Double"/>
         <mapperTableEntries name="DataAlteracaoContabil" nullable="true" type="id_Date"/>
         <mapperTableEntries name="DataInsercaoContabil" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="InconsistenciaDeContinuidadeContabil" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlOutput"/>
-    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
-    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
-    <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="true"/>
-    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlOutput"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_P27UsEBkEe-YS8RQVZZjcw"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -774,6 +761,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InconsistenciaDeContinuidadeContabil"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -835,6 +827,7 @@
       <column comment="" defaultValue="" key="false" length="15" name="Vlr07Contabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataAlteracaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataInsercaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="InconsistenciaDeContinuidadeContabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="2" name="CodigoFilial" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -887,6 +880,7 @@
       <column comment="" defaultValue="" key="false" length="15" name="Vlr07Contabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataAlteracaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="23" name="DataInsercaoContabil" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="InconsistenciaDeContinuidadeContabil" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -896,6 +890,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="Ajuste_Data" lineStyle="0" metaname="Ajuste_Data" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="InconsistenciaDeContinuidadeContabil"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Ajuste_Data"/>
   </connection>
@@ -904,13 +903,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_24054f9c-40d5-4e95-a709-568c38a0fc8f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MieTXH6UXI3xW+P3W4ZxKzQWfHKaK9AJEmMjlzVvI05Dyh9MuG+WmCAkEEVWjSktHQ6naInrL+51&#13;
-nrucgIsoug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e82dd33f-1fe9-4e37-9aef-0bec4ce85269"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b6nOVa+1VsSA4/j+YxltVN5yiiiozZ+ZbXz7v2hUiWiajaGqLg4gH/i313mYlln8HhWShRwdmBaF&#13;
-zM5xU+ZaCw==</DigestValue></Reference></SignedInfo><SignatureValue>k7CgiT3Bq3X/ZDxcjcVUbNjnh9hH45chuSgwmbYKCWlnoA0WfItRADCbL1Tg0YaNyrf9+Ehno6qT&#13;
-DaCtqc32D3X0f2LAX3NrK32xh36OK0RMgeiPOst3kp9IUtyjdTfpS1zslGGaG1kBtaqE+KqVCGYX&#13;
-sYZ15uJw75sCaNPv6ey67DW1x2lN0L3hibrqo/GyXpk+Qlq0meGskRkFhd+Vom61azsN85iFzufP&#13;
-NjorXexnsRh7BiAfeLELRzYYeBcqrOd0n/knO3hki1GgNIKrlw6pem8kB/9XO08VllbXmbEKFc4i&#13;
-538u1SvhPUlUzJwSOiqk/MiOgFWcLtRp0J/uIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9265fbbb-0d39-4fec-a254-b91e89d88fa3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3Y1lZvEazXb6TOqaISZ6LSEZhL9bryx1Q0EcvkgDaEdsTkZ1MBPByLX4gTIEP+PfWv5Re5pRjoT5&#13;
+5yuXQah3Lg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02701207-2822-4b08-a710-dc4256929338"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3uzwla2eJH+Hfz91aRPciiGhvP4F2sewr74k+CvMjHMQS9fcoBDMDrtvjBPukXkUludR1a4Cm5ZP&#13;
+kGs/P9t1XQ==</DigestValue></Reference></SignedInfo><SignatureValue>LwI1NYMOqwsiC/aNskzrxNm45Zy+9OsxgLcOXoR6m6aONqKLLfBrZDx/5vIU/Q4D+OVjF7H+yhGS&#13;
+9oyML3B8WcgWGnAA8kpdmyQdMebrv/PbOXEW9GZ7ThNxSwhPM+u7Wu9WcFhqUG/wk0Bni27O7df8&#13;
+x09zkSk/NfD/Ow7TXXwtnx+FEV+1VbwD4+Q5S5jhSnQo+bp6KxPC4G5XPFXuRMxY0jx3a8yHtbYS&#13;
+x/BbXTUpTYrFoRBx9L9vUwvRo7gdjnLIo0BCcYmK8scty1T4boKEr0SvzB/kLBZsqyjxJ5rHGwc4&#13;
+Ef9HIj4DNH/9pXX5v2rfQUwxDuf2iI14f+z/WA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -932,4 +931,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e82dd33f-1fe9-4e37-9aef-0bec4ce85269" Target="#_24054f9c-40d5-4e95-a709-568c38a0fc8f"><Timestamp>2024-09-17 21:15:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02701207-2822-4b08-a710-dc4256929338" Target="#_9265fbbb-0d39-4fec-a254-b91e89d88fa3"><Timestamp>2024-09-20 14:52:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
