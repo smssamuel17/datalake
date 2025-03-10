@@ -100,7 +100,7 @@
   </parameters>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_1"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;https://v2.horusbi.com.br/api/form/data/365.json?flatdata=1&amp;max=1000000&amp;_apitoken=ujPMPlENAsckOKxqQrHRGoLRLOuQQWmHCWyMHoCAKGzclhOoYesvjdvWStsRRHbLpiUqnePzpRq%7CqTsKKlyGDYGuDBEimilkmrAnXXlZil%2AXwoFdMChpkTIRX%2AgaaE%2Ax&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://v2.horusbi.com.br/api/form/data/177.json?flatdata=1&amp;max=1000000&amp;_apitoken=ujPMPlENAsckOKxqQrHRGoLRLOuQQWmHCWyMHoCAKGzclhOoYesvjdvWStsRRHbLpiUqnePzpRq%7CqTsKKlyGDYGuDBEimilkmrAnXXlZil%2AXwoFdMChpkTIRX%2AgaaE%2Ax&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
     <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="MEMO" name="BODY" show="false" value="&quot;&quot;"/>
@@ -118,20 +118,44 @@
     <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;/bills/bill/line&quot;"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.data[*]&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Grupo"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CriadoPor"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Categoria"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CriadoEm"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodigoRepresentante"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DescricaoRepresentante"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CanalVendas"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Regional"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Grupo"/>
-      <elementValue elementRef="QUERY" value="&quot;grupo&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Categoria"/>
-      <elementValue elementRef="QUERY" value="&quot;categoria&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CriadoPor"/>
+      <elementValue elementRef="QUERY" value="&quot;_createdBy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CriadoEm"/>
+      <elementValue elementRef="QUERY" value="&quot;_createdOn&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodigoRepresentante"/>
+      <elementValue elementRef="QUERY" value="&quot;COD_REPRESENTANTE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DescricaoRepresentante"/>
+      <elementValue elementRef="QUERY" value="&quot;DESC_REPRESENTANTE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CanalVendas"/>
+      <elementValue elementRef="QUERY" value="&quot;CANAL_VENDAS&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Regional"/>
+      <elementValue elementRef="QUERY" value="&quot;REGIONAL&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -142,12 +166,20 @@
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tExtractJSONFields_1">
-      <column comment="" key="false" length="-1" name="Grupo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Categoria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CriadoPor" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CriadoEm" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodigoRepresentante" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DescricaoRepresentante" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CanalVendas" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Regional" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="Grupo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Categoria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CriadoPor" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CriadoEm" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CodigoRepresentante" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DescricaoRepresentante" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CanalVendas" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Regional" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -158,7 +190,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_NhSBwGPsEe-E9e3-sqkc0w-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Fa4EcGRyEe-E9e3-sqkc0w-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -168,19 +200,31 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Manipulacao">
-      <column comment="" key="false" length="20" name="Grupo" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Categoria" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CriadoPor" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CriadoEm" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CodigoRepresentante" nullable="true" originalLength="8" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="70" name="DescricaoRepresentante" nullable="true" originalLength="70" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="CanalVendas" nullable="true" originalLength="35" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Regional" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Manipulacao" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.Grupo.trim()" name="Grupo" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Categoria.trim()" name="Categoria" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.CriadoPor " name="CriadoPor" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.CriadoEm " name="CriadoEm" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.CodigoRepresentante " name="CodigoRepresentante" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.DescricaoRepresentante " name="DescricaoRepresentante" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.CanalVendas " name="CanalVendas" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Regional " name="Regional" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Grupo" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Categoria" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CriadoPor" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CriadoEm" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CodigoRepresentante" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DescricaoRepresentante" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CanalVendas" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Regional" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -197,14 +241,14 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;BRONZE&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FzYak10caQBhvEITBhSYoXfPbbK8NH42Q3zBbDrk7VYH02UlrfEBfMNx1w=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;GameGerentes_RAW&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uabe+Sk2rzos08fSo5KwzJyn+0qK9vI3COaReOqjQO9kKm5rALe99/dmhw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;HipaCanalRegional_RAW&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
     <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="Grupo"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="CriadoPor"/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -225,12 +269,32 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Grupo"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CriadoPor"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Categoria"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CriadoEm"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CodigoRepresentante"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DescricaoRepresentante"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CanalVendas"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Regional"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -246,12 +310,20 @@
     <elementParameter field="TEXT" name="LABEL" value="Datalake_Bronze"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="false" length="20" name="Grupo" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Categoria" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CriadoPor" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CriadoEm" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="8" name="CodigoRepresentante" nullable="true" originalLength="8" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="70" name="DescricaoRepresentante" nullable="true" originalLength="70" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="35" name="CanalVendas" nullable="true" originalLength="35" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="Regional" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="20" name="Grupo" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Categoria" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CriadoPor" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CriadoEm" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="8" name="CodigoRepresentante" nullable="true" originalLength="8" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="70" name="DescricaoRepresentante" nullable="true" originalLength="70" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="35" name="CanalVendas" nullable="true" originalLength="35" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="Regional" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -273,13 +345,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50022dd5-1281-4d6d-bafd-4b9dcda40671"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DZsBtjal4F2XwWQfRJ3s6jqu+EDIRoKVyDIkn7s6iHSgNHGEbd0XqWAr2JUzaUXOnU25f9OFdZRi&#13;
-Wee42TC7Rw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0e5d4cc9-8e90-4211-b33a-ccbcedf80a91"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k9g/Me5ehdLYI9DVbRNnfrn4Dgr9Uu8q32KQo0yWrWjm2Lgduoq3dqfhLesIUV7zIVLm8QNPQjBG&#13;
-au5liiFANA==</DigestValue></Reference></SignedInfo><SignatureValue>JJQO7xQYcE0dN4BUdqceZjD/kxKE/KDhI6Wspqbrr+5RgRSxV/dxXIzDqo3KNj+AWVeuLhErzYV1&#13;
-736iA78mySRS0BErLk00b9ONWtLY6aKOAkC7RfNz7eiYHR0l8JatR8XHThIBFAtvBNB4VMulMq90&#13;
-DEEF0GHtqYJb7piLRx0XesReGFBRZAaisPFClKzAK6hg+edJFSxU8dJAI0GymJAhiGCfVLCp+gkN&#13;
-CEjAd5t88LacjaJs3CTnlwkAxUQq7PT5tAOLvre84PL4ubt/BNtcQwTRYblQ0hmxxyBRlGKL3alj&#13;
-nzcBB2wo65nE7H+4i7rUD4EN2F5OLBhIBgDrpQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3276c079-91a8-46d1-9bcc-56374a3b8171"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n1Jp010P16lY0hzfFGmFikKrR5eh7lRCNEki8I1Q95moNsgqQtlB3EFQ0pAEYBJ6iQA9XgJEMAL9&#13;
+2LRgqPHlOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4d4b6125-8a94-45aa-a10e-2e00b8a62cde"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hGdhnPNdrVY7zVY0QJJDAfIqk4xhra0HnGGN410xa7bTnZB+fOJpeGM31egS3eUBr02R8PAGhmwJ&#13;
+o9bjv5btFQ==</DigestValue></Reference></SignedInfo><SignatureValue>Xt9mp02HtDk/sZEUdGSPPQGKL500K0DckrGUNbcd7Xr/vFmVG8MniLVN4Z1f3QPydU0rIXCZ6z2B&#13;
+X4qVBB7dfZpMXmOD7sZ0xy09qJhYgQf9pGSB2IEu5Jl+W2uoc4afzQ0XC8CVuNhiTtRSP+KHxNoK&#13;
+fSUhacjYTrBYHBOWAyPuTDG1CRj35GGlL8DW6FRPrCvoP6T1+aHBqdPxLd+ilIwZV5x6PhdJp/K9&#13;
+d5sODStcG3utzsw/BLKVDkh4ZrQ67Zof0CkLDe9JFHvbcF1AxZDbEeG3aNwjjIZy8BhzZj5gbSoi&#13;
+ugGCOB6mL1SluMK87JWlBZYoPbSW8JDMZ43LgA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -301,4 +373,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0e5d4cc9-8e90-4211-b33a-ccbcedf80a91" Target="#_50022dd5-1281-4d6d-bafd-4b9dcda40671"><Timestamp>2024-12-23 12:32:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4d4b6125-8a94-45aa-a10e-2e00b8a62cde" Target="#_3276c079-91a8-46d1-9bcc-56374a3b8171"><Timestamp>2024-12-30 12:28:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
