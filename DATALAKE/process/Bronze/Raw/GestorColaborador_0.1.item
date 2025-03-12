@@ -435,6 +435,7 @@
       <column comment="" key="false" length="-1" name="cpf_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="email_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="departamento_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -447,6 +448,7 @@
         <mapperTableEntries name="cpf_funcionario" expression="row10.cpf " type="id_String" nullable="true"/>
         <mapperTableEntries name="name_funcionario" expression="row10.name " type="id_String" nullable="true"/>
         <mapperTableEntries name="email_funcionario" expression="row10.email " type="id_String" nullable="true"/>
+        <mapperTableEntries name="departamento_funcionario" expression="row10.department " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" type="id_String" nullable="true"/>
@@ -459,6 +461,7 @@
         <mapperTableEntries name="cpf" type="id_String" nullable="true"/>
         <mapperTableEntries name="name" type="id_String" nullable="true"/>
         <mapperTableEntries name="email" type="id_String" nullable="true"/>
+        <mapperTableEntries name="department" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -476,6 +479,7 @@
       <column comment="" key="false" length="-1" name="cpf" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="department" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="600">
@@ -506,6 +510,8 @@
       <elementValue elementRef="LENGTH" value="10" id="11"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="email_funcionario" id="12"/>
       <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="departamento_funcionario" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -518,6 +524,7 @@
       <column comment="" key="false" length="-1" name="cpf_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="email_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="departamento_funcionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="760">
@@ -541,6 +548,7 @@
       <column comment="" key="false" length="10" name="MatriculaColaborador" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="CpfColaborador" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="11" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="EmailFuncionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="DepartamentoFuncionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="40" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="IdSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NomeSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="MatriculaSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
@@ -557,6 +565,7 @@
         <mapperTableEntries name="MatriculaColaborador" expression="row12.registration_funcionario " type="id_String" nullable="true"/>
         <mapperTableEntries name="CpfColaborador" expression="row12.cpf_funcionario " type="id_String" nullable="true"/>
         <mapperTableEntries name="EmailFuncionario" expression="row12.email_funcionario " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartamentoFuncionario" expression="row12.departamento_funcionario " type="id_String" nullable="true"/>
         <mapperTableEntries name="IdSuperior" expression="row13.idsuperior " type="id_String" nullable="true"/>
         <mapperTableEntries name="NomeSuperior" expression="row13.name_superior " type="id_String" nullable="true"/>
         <mapperTableEntries name="MatriculaSuperior" expression="row13.registration_superior " type="id_String" nullable="true"/>
@@ -571,6 +580,7 @@
         <mapperTableEntries name="cpf_funcionario" type="id_String" nullable="true"/>
         <mapperTableEntries name="name_funcionario" type="id_String" nullable="true"/>
         <mapperTableEntries name="email_funcionario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="departamento_funcionario" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row13" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" expression="row12.id " type="id_String" nullable="true" operator="="/>
@@ -621,7 +631,7 @@
       <column comment="" key="false" length="-1" name="email_superior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Gest_compl">
         <mapperTableEntries name="id" expression="row8.id " type="id_String" nullable="true"/>
@@ -775,31 +785,36 @@
       <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
       <elementValue elementRef="UPDATABLE" value="true" id="28"/>
       <elementValue elementRef="INSERTABLE" value="true" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IdSuperior" id="30"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DepartamentoFuncionario" id="30"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
       <elementValue elementRef="UPDATABLE" value="true" id="33"/>
       <elementValue elementRef="INSERTABLE" value="true" id="34"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NomeSuperior" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdSuperior" id="35"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
       <elementValue elementRef="UPDATABLE" value="true" id="38"/>
       <elementValue elementRef="INSERTABLE" value="true" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MatriculaSuperior" id="40"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NomeSuperior" id="40"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
       <elementValue elementRef="UPDATABLE" value="true" id="43"/>
       <elementValue elementRef="INSERTABLE" value="true" id="44"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CpfSuperior" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MatriculaSuperior" id="45"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
       <elementValue elementRef="UPDATABLE" value="true" id="48"/>
       <elementValue elementRef="INSERTABLE" value="true" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EmailSuperior" id="50"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CpfSuperior" id="50"/>
       <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
       <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
       <elementValue elementRef="UPDATABLE" value="true" id="53"/>
       <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailSuperior" id="55"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -817,6 +832,7 @@
       <column comment="" key="false" length="10" name="MatriculaColaborador" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="CpfColaborador" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="11" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="EmailFuncionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="DepartamentoFuncionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="40" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="IdSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NomeSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="MatriculaSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
@@ -830,6 +846,7 @@
       <column comment="" key="false" length="10" name="MatriculaColaborador" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="CpfColaborador" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="11" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="EmailFuncionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="DepartamentoFuncionario" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="40" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="IdSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="4" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NomeSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="MatriculaSuperior" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
@@ -928,6 +945,10 @@
       <elementValue elementRef="QUERY" value="" id="17"/>
       <elementValue elementRef="NODECHECK" value="false" id="18"/>
       <elementValue elementRef="ISARRAY" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="department" id="20"/>
+      <elementValue elementRef="QUERY" value="" id="21"/>
+      <elementValue elementRef="NODECHECK" value="false" id="22"/>
+      <elementValue elementRef="ISARRAY" value="false" id="23"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="id" id="0"/>
@@ -940,6 +961,8 @@
       <elementValue elementRef="QUERY" value="&quot;name&quot;" id="7"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="email" id="8"/>
       <elementValue elementRef="QUERY" value="&quot;email&quot;" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="department" id="10"/>
+      <elementValue elementRef="QUERY" value="&quot;department&quot;" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -955,6 +978,7 @@
       <column comment="" key="false" length="-1" name="cpf" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="department" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -962,6 +986,7 @@
       <column comment="" key="false" length="-1" name="cpf" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="department" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -985,6 +1010,7 @@
       <column comment="" key="false" length="-1" name="cpf" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="department" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tMap_1">
@@ -1046,6 +1072,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="email_funcionario" id="6"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="departamento_funcionario" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Colab_compl" show="false"/>
@@ -1055,6 +1084,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="email" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="department" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
@@ -1077,6 +1109,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="EmailFuncionario" id="9"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartamentoFuncionario" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Juncao" show="false"/>
@@ -1133,6 +1168,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="email" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="department" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
